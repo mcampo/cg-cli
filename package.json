@@ -1,6 +1,6 @@
 {
   "name": "cg-cli",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Cheff Gourmet CLI",
   "main": "cli.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "inquirer": "^5.1.0",
     "moment": "^2.20.1",
     "node-fetch": "^2.2.0",
-    "tough-cookie": "^2.4.3"
+    "tough-cookie": "^2.4.3",
+    "update-notifier": "^2.5.0"
   }
 }

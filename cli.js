@@ -1,14 +1,18 @@
 #!/usr/bin/env node
 
+const updateNotifier = require('update-notifier')
 const inquirer = require("inquirer")
 const process = require("process")
 const moment = require("moment")
 const log = require("debug")("cg:cli")
 const client = require("./client")
+const pkg = require('./package.json')
 
 const DATE_FORMAT = "YYYY-MM-DD"
 
 async function run() {
+  updateNotifier({ pkg }).notify({ defer: false })
+
   const profile = await getProfile()
   log("user profile %o", profile)
 
