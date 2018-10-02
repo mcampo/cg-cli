@@ -1,0 +1,25 @@
+{
+  "name": "cg-cli",
+  "version": "0.1.1",
+  "description": "Cheff Gourmet CLI",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "cg": "./cli.js"
+  },
+  "author": "Mariano Campo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcampo/cg-cli.git"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "inquirer": "^5.1.0",
+    "moment": "^2.20.1",
+    "node-fetch": "^2.2.0",
+    "tough-cookie": "^2.4.3"
+  }
+}
