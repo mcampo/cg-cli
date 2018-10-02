@@ -105,7 +105,7 @@ async function selectFood(order) {
       message: foodCategory.category_name,
       type: "list",
       choices: foods(foodCategory).map(food => ({
-        name: food.food_name,
+        name: `${food.selected ? '[*] ' : ''}${food.food_name}`,
         value: food
       })),
       pageSize: 20
