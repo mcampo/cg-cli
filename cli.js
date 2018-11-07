@@ -48,7 +48,7 @@ async function getProfile() {
 }
 
 async function getOrders(profile) {
-  const startMoment = moment().add(1, "days")
+  const startMoment = moment()
   const endMoment = startMoment.clone().add(30, "days")
   const orders = await client.getOrders(
     profile.id,
